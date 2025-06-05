@@ -25,6 +25,7 @@ export async function handlerUsersCreate(req: Request, res: Response) {
       respondWithError(res, 500, "Couldn't retrieve user");
     }
   } catch (err) {
+    console.log("here");
     respondWithError(res, 500, "Couldn't create user", err);
   }
 }
